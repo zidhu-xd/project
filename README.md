@@ -1,6 +1,6 @@
 # project
 # Typing Blaster
-## Made By [https://github.com/zidhu-xd]@zidhuxd
+Made By [@zidhuxd](https://github.com/zidhu-xd)
 #### Video : 
 
 
