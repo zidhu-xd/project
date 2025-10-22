@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Typing Blaster</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+<h1>Typing Blaster</h1>
+<div class="meta">
+<div>Score: <span id="score">0</span></div>
+<div>Lives: <span id="lives">5</span></div>
+<div>Level: <span id="level">1</span></div>
+</div>
+</header>
+
+
+<main>
+<canvas id="gameCanvas" width="900" height="450"></canvas>
+
+
+<div class="controls">
+<input id="typingInput" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Type here and press SPACE or ENTER to fire" />
+<button id="startBtn">Start / Restart</button>
+<button id="pauseBtn">Pause</button>
+<button id="muteBtn">Mute</button>
+</div>
+
+
+<section class="instructions">
+<h2>How to play</h2>
+<ol>
+<li>Words fly from right to left. Type a word and press <strong>Space</strong> or <strong>Enter</strong> to "blast" it.</li>
+<li>If your typed word matches any on the screen, that word disappears and you score points.</li>
+<li>Letting a word reach the left edge costs a life. Lose all lives and it's game over.</li>
+</ol>
+<p>Progress through levels — words speed up and spawn more frequently. High scores are saved in your browser.</p>
+</section>
+<section class="footer-note">
+<div>High Score: <span id="highscore">0</span></div>
+</section>
+</main>
+<script src="game.js"></script>
+</body>
+</html>
